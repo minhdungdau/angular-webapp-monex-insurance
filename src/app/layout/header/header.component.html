@@ -1,0 +1,35 @@
+<header>
+  <div class="header-bg" fxLayout="column">
+    <div
+      class="header-container"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+    >
+      <div>
+        <a><img [src]="logoSrc" alt="logo-monex" /></a>
+      </div>
+      <ng-template #Login>
+        <button mat-flat-button class="ui-button button-login">
+          Đăng nhập
+        </button>
+      </ng-template>
+      <div *ngIf="isLogged; else Login">
+        <button mat-button [matMenuTriggerFor]="menu" style="padding: 4px 12px; margin-right: -12px; min-width: auto;">
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="avatar">Q</div>
+            <img src="assets/img/icon-expand.svg" alt="show" />
+          </div>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      </div>
+    </div>
+
+    <div class="navigation-bar" fxLayout="row" fxLayoutAlign=" center">
+      <button mat-button class="back"><img src="assets/img/icon-back.svg" alt="back" /></button>
+      <h2>{{ titleNavigation }}</h2>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+section {
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-10;
+}
+.top-insurance {
+  background-color: #f2f9ff;
+  height: 200px;
+  overflow: hidden;
+  .content {
+    max-height: 100%;
+    padding: 16px 0 20px 24px;
+    margin-right: -12px;
+    .title-content {
+      color: $system-color-blue;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    h1,
+    p {
+      color: $monex-color-01;
+      padding: 0;
+      margin: 0;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+    .link {
+      color: $grey-06;
+      img {
+        margin-left: 5.5px;
+      }
+    }
+  }
+}
+
+.main-content {
+  margin-top: 8px;
+  padding: 16px;
+}
+
+.not-select {
+  color: $grey-06;
+}
+
+.select-field {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 0 0 24px;
+}
